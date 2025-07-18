@@ -31,7 +31,7 @@ export const globalInit = async () => {
     }
   });
   const registry = {
-    url: '/', tpl: '{{url}}'
+    url: '/', tpl: '{{url}}/components/@kne-components/{{remote}}/{{version}}/build'
   };
 
   const componentsCoreRemote = {

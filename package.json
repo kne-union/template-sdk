@@ -1,6 +1,6 @@
 {
   "name": "@kne-template/sdk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "使用@kne/npm-tools初始化一个sdk.",
   "scripts": {
     "init": "husky",
