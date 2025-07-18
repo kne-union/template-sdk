@@ -40,7 +40,7 @@
 </body>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    window.<%=templateLibs.camelCase(name)%>(document.getElementById('root'), {
+    window.<%=templateLibs.camelCase(name,{caseStyle:"lower"})%>(document.getElementById('root'), {
       type: 'Test',
       children: 'Test Children'
     });

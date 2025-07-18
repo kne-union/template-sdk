@@ -4,13 +4,18 @@
   "description": "<%=description%>",
   "scripts": {
     "init": "husky",
-    "start": "cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/ craco start",
-    "build": "cross-env COMPONENTS_NAME=<%=name%> MODULES_DEV_PUBLIC_URL=/<%=name%> craco build",
+    "deploy-project": "npx @kne/npm-tools deploy-project",
+    "start": "npm run deploy-project && cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/ craco start",
+    "build": "npm run deploy-project && cross-env COMPONENTS_NAME=<%=name%> MODULES_DEV_PUBLIC_URL=/<%=name%> craco build",
     "create": "modules-dev-create",
     "test": "craco test --coverage",
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss}'",
     "lint-staged": "npx lint-staged"
+  },
+  "deploy-components": {
+    "@kne-components/components-core": "0.4.5",
+    "@kne-components/components-iconfont": "0.2.1"
   },
   "husky": {
     "hooks": {
