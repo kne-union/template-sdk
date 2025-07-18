@@ -4,9 +4,9 @@
   "description": "<%=description%>",
   "scripts": {
     "init": "husky",
-    "deploy-project": "npx @kne/npm-tools deploy-project",
+    "deploy-project": "cross-env OUTPUT_PATH=./public/components npx @kne/npm-tools deployProject",
     "start": "npm run deploy-project && cross-env PORT=3010 MODULES_DEV_PUBLIC_URL=/ craco start",
-    "build": "npm run deploy-project && cross-env COMPONENTS_NAME=<%=name%> MODULES_DEV_PUBLIC_URL=/<%=name%> craco build",
+    "build": "cross-env COMPONENTS_NAME=<%=name%> MODULES_DEV_PUBLIC_URL=/<%=name%> craco build",
     "create": "modules-dev-create",
     "test": "craco test --coverage",
     "eject": "react-scripts eject",
