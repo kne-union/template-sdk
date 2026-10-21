@@ -1,6 +1,6 @@
 {
   "name": "@kne-template/sdk",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "使用@kne/npm-tools初始化一个sdk.",
   "scripts": {
     "init": "husky",
@@ -20,15 +20,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kne-union/template-project.git"
+    "url": "git+https://github.com/kne-union/template-sdk.git"
   },
   "keywords": ["template"],
   "author": "linzp",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kne-union/template-project/issues"
+    "url": "https://github.com/kne-union/template-sdk/issues"
   },
-  "homepage": "https://github.com/kne-union/template-project#readme",
+  "homepage": "https://github.com/kne-union/template-sdk#readme",
   "devDependencies": {
     "husky": "^9.0.11",
     "prettier": "^3.2.5"
