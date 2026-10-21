@@ -68,7 +68,8 @@
     }
   },
   "devDependencies": {
-    "@craco/craco": "^7.1.0",
+    "@kne/craco": "^7.1.4",
+    "@kne/react-scripts": "^5.1.6",
     "@kne/axios-fetch": "^1.0.2",
     "@kne/react-fetch": "^1.4.3",
     "@kne/remote-loader": "^1.2.3",
